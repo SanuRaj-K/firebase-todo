@@ -25,7 +25,7 @@ function Landing({ setUser }) {
   };
   return (
     <div className="h-screen    relative w-full overflow-hidden   ">
-      <div className=" ml-7   ">
+      <div className=" ml-10 mt-9   ">
         <svg
           className="  cursor-pointer sm:w-[44px] sm:h-[66px] w-[30px] h-[50px] mt-4 md:mt-0 "
           viewBox="0 0 44 66"
@@ -38,7 +38,7 @@ function Landing({ setUser }) {
           />
         </svg>
       </div>
-      <div className=" lg:grid lg:grid-cols-2  h-full z-50  w-full ">
+      <div className=" lg:grid lg:grid-cols-2  h-full z-50  w-full  ">
         <div className="   h-1/2 md:h-full flex flex-col justify-center  z-50      items-center  md:mt-0 lg:justify-center ">
           <div className="  sm:flex flex-col mx-4  text-center w-1/2 items-center    md:w-[500px] bg- md:text-center">
             <span className=" text-[33px]  font-[500]">LOGIN</span>
