@@ -20,6 +20,7 @@ function Landing({ setUser }) {
       });
     } catch (err) {
       toast.error("something went wrong...");
+      console.log(err);
     }
   };
   return (
