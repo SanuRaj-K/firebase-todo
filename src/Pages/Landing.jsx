@@ -38,11 +38,11 @@ function Landing({ setUser }) {
           />
         </svg>
       </div>
-      <div className=" md:grid md:grid-cols-2 h-full z-50  w-full">
-        <div className="    flex flex-col   w-full      items-center mt-12 md:mt-0 md:justify-center ">
-          <div className=" sm:flex flex-col mx-4  text-center w-1/2 items-center    md:w-[500px] bg- md:text-center">
+      <div className=" lg:grid lg:grid-cols-2  h-full z-50  w-full ">
+        <div className="   h-1/2 md:h-full flex flex-col justify-center  z-50      items-center  md:mt-0 lg:justify-center ">
+          <div className="  sm:flex flex-col mx-4  text-center w-1/2 items-center    md:w-[500px] bg- md:text-center">
             <span className=" text-[33px]  font-[500]">LOGIN</span>
-            <p className=" text-gray-500 text-center md:text-[20px] py-3">
+            <p className=" text-gray-500 text-center md:text-[20px] py-3 my-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
               at eleifend feugiat vitae faucibus nibh dolor dui. Lorem ipsum
               dolor sit amet, consectetur adipiscing elit. Aliquet at eleifend
@@ -53,7 +53,7 @@ function Landing({ setUser }) {
               className=" flex    justify-between mx-auto   cursor-pointer w-[230px]  bg-[#597EF7]  text-white pr-4 py-2 rounded-md"
             >
               <svg
-                className=" bg-white p-1 rounded-sm ml-3"
+                className=" bg-white p-1 rounded-sm ml-3 z-50"
                 width="30"
                 height="30"
                 viewBox="0 0 36 36"
@@ -88,19 +88,28 @@ function Landing({ setUser }) {
             </div>
           </div>
         </div>
-
-        <div className="  h-full relative   md:block  mt-16 md:mt-0">
+        <div className="  h-1/2 md:h-full relative z-10   md:block  mt-16 md:mt-0 ">
           <div className="  ">
-            <div className="absolute md:-top-[290px] -top-[230px]   md:-right-[170px]">
-              <img src={Rectangle} alt="Client" width={1600} className="" />
-              <div className=" absolute top-[240px] left-[220px]">
+            <div className="absolute md:-top-[290px] bottom-0  -top-[200px]   md:-right-[170px]">
+              <div className="relative  h-full ">
+
+              <img src={Rectangle} alt="Client" width={1600} className=" h-full  object-contain lg:object-fill xl:object-contain" />
+              <img
+                  src={Client}
+                  className="absolute top-[40%] md:top-[35%]  left-[17%]  2xl:left-[23%]"
+                  width={300}
+                  
+                  alt="Client"
+                />
+                </div>
+              <div className=" fixed top-0 right-[30%]">
                 <img
-                  className=" hidden md:flex   "
+                  className=" hidden lg:flex   "
                   src={TopLight}
-                  width={150}
+                  width={80}
                   alt="toplight"
                 />
-                <img src={Client} width={380} height={340} alt="Client" />
+               
               </div>
             </div>
           </div>
